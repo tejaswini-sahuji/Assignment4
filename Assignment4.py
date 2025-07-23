@@ -1,6 +1,6 @@
 #file reading and error handling
 #task1
-# Opens and reads a text file named sample.txt and print the content line by line if file is not exist give error
+#reading sample file and print data if file is exist otherwise gives error
 def read_file(filename):
     try:
         with open(filename, 'r') as file:
@@ -14,7 +14,7 @@ def read_file(filename):
 read_file('sample.txt')
 
 #task2
-# Takes user input and writes it to a file named output.txt append the same file and again read and displya final output.
+#Write a file and append data in existing file and again read the file for showing appended data
 def write_file(filename):
     write1 = input("Enter the content:")
     with open(filename, 'w') as file:
